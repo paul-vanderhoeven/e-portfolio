@@ -15,17 +15,14 @@ div#moi {
 	justify-content: center;
 	align-items: center;
 }
-div#profil-text {
-	text-align: center;
-}
 h2 {
 	padding: 20px;
 }
 span#icon {
 	font-size: 40px;
 }
-div#progress {
-	padding: 10px;
+.center {
+	text-align: center;
 }
 div#exp {
 	text-align: center;
