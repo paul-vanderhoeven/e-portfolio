@@ -1,10 +1,13 @@
 div#titre {
-	padding-bottom: 15%;
-	padding-top: 15%;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+div#nom {
 	background-image: url("./images/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: auto;
+	height: 300px;
 }
 img#moi {
 	width: 300px;
@@ -13,60 +16,20 @@ img#moi {
 div#moi {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
-h2 {
-	padding: 20px;
-}
+
 span#icon {
 	font-size: 40px;
+	color: white;
+	padding: 50px;
 }
 .center {
 	text-align: center;
 }
-div#exp {
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-div#exp > div {
-	display: inline;
-	border-top: 2px solid rgb(82, 64, 64);
-}
-div#mail {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-}
-div#mail > p{
-	margin: 10px;
+footer {
+	height: 100px;
 }
 
-/* ---------------------- Form ---------------------------------*/
-/* label color */
-.input-field label {
-	color: #000;
-  }
-/* label focus color */
-.input-field input[type=text]:focus + label {
-	color: #000;
-  }
-/* valid color */
-.input-field input[type=text].valid {
-	border-bottom: 1px solid black;
-	box-shadow: 0 1px 0 0 black;
-  }
-/* invalid color */
-.input-field input[type=text].invalid {
-	border-bottom: 1px solid black;
-	box-shadow: 0 1px 0 0 black;
-  }
-
-@media screen and (min-width: 992px) {
-
-	div#nav {
-		margin: 0 25%;
-	}
+#link {
+	color: black;
 }
