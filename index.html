@@ -13,33 +13,30 @@
   	<link rel="stylesheet" href="style.css">
 
 </head>
-<!----------------------------Nav---------------------->
+<!-- Nav ---------------------->
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md container">
-			<div class="navbar-brand"><a href="#" id="link" class="nav-brand">Paul</a></div>
-				<div class="collapse navbar-collapse">
-			    	<div class="navbar-nav">
-			    		<a class="nav-link" id="link" href="#Profil">Profil</a>
-			    		<a class="nav-link" id="link" href="#Competences">Compétences</a>
-			    		<a class="nav-link" id="link" href="#exp">Expériences</a>
-			    		<a class="nav-link" id="link" href="#contact">Contact</a>
-			    	</div>
+				<div class="navbar-nav" id="center-nav">
+			    <a class="nav-link" id="link" href="#Profil">A propos</a>
+			    <a class="nav-link" id="link" href="#Competences">Compétences</a>
+					<a href="#" id="link" class="h3">Paul van der Hoeven</a>
+			    <a class="nav-link" id="link" href="#exp">Expériences</a>
+			    <a class="nav-link" id="link" href="#contact">Contact</a>
 				</div>
-  			</div>
 		</nav>
 	</header>
 
 	<div id="nom">
-		<div id="titre bg-dark">
-			<h1 class="text-white">Paul van der Hoeven</h1>
-			<p class="text-white">Etudiant en 2ème année de DUT Informatique</p>
+		<div id="titre">
+			<h1 class="text-black">Paul van der Hoeven</h1>
+			<p class="text-black">Etudiant en 2ème année de DUT Informatique</p>
 		</div>
 	</div>
-<!----------------------------Profil---------------------------------------->
+<!-- Profil ---------------------------------------->
 	<div class="container-fluid">
 		<div class="container">
-			<h2 class="center">Profil</h2>
+			<h2 class="center">A propos de moi</h2>
 			<div class="row">
 				<div id="moi" class="col-md-4">
 					<img id="moi" class="circle" src="./images/moi.jpg">
@@ -58,21 +55,43 @@
 		</div>
 	</div>
 
-<!--------------------Ma formation et mon projet professionnel-------------------------->
-	<div class="container-fluid ">
+<!-- Ma formation et mon projet professionnel -------------------------->
+	<div class="container-fluid bg-dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<h2 class="center">Ma formation</h2>
+				<!-- Timeline ---------------------------------->
+				<div class="ma-formation col-md-6">
+					<h2 class="center text-white">Ma formation</h2>
+					<div class="timeline">
+				   <div class="container-timeline">
+				     <div class="content">
+							 <p class="date">2018 - 2020</p>
+				       <h3>DUT Informatique</h3>
+							 <p class="sous-titre">En cours d'obtention</h4>
+				       <p>Formation en informatique dans plusieurs domaines: programmation objet, réseau, base de données, programmation web, gestion de projet.
+							 <br>Classement au semestre 3 : 3/114</p>
+				     </div>
+				   </div>
+					 <div class="container-timeline">
+						 <div class="content">
+							 <p class="date">2015 - 2018</p>
+							 <h3>BAC S-SI</h3>
+							 <p class="sous-titre">Mention Très Bien</p>
+							 <p>Bac scientifique sciences de l'ingénieur, spécialité informatique et sciences du numérique, option natation</p>
+						 </div>
+					 </div>
+				 </div>
 				</div>
-				<div class="col-md-6">
-					<h2 class="center">Mon projet professionnel</h2>
+
+				<!-- Mon projet Pro ---------------------------------->
+				<div class="mon-projet-pro col-md-6">
+					<h2 class="center text-white">Mon projet professionnel</h2>
 				</div>
-			</div
 		</div>
 	</div>
+	</div>
 
-<!-------------------------------Mes projets------------------------------->
+<!-- Mes projets ------------------------->
 
 <div class="container-fluid">
 	<div class="container">
@@ -98,7 +117,7 @@
 	</div>
 </div>
 
-<!------------------Expériences professionnelles------------------->
+<!-- Expériences professionnelles ------------------->
 
 	<div class="container-fluid">
 		<div class="container">
@@ -114,15 +133,18 @@
 		</div>
 	</div>
 
-<!-------------------------------Footer----------------------------->
+<!-- Footer ----------------------------->
 	<footer class="container-fluid bg-dark">
-		<div class="container">
-			<div class="social-icons">
-				<a href="https://fr.linkedin.com/" class=""><span id="icon" class="socicon socicon-linkedin"></span></a>
-				<a href="https://github.com/paul-vanderhoeven" class=""><span id="icon" class="socicon socicon-github"></span></a>
-			</div>
+		<div class="container" id="footer">
+				<div class="text-white h4" id="mail">
+					Mail: <a href="mailto:paul.vdh@hotmail.fr">paul.vdh@hotmail.fr</a>
+				</div>
+				<div class="social-icons" id="footer-links">
+					<a href="https://www.linkedin.com/in/paul-van-der-hoeven-68180216b/" class=""><span id="icon" class="socicon socicon-linkedin"></span></a>
+					<a href="https://github.com/paul-vanderhoeven" class=""><span id="icon" class="socicon socicon-github"></span></a>
+				</div>
 		</div>
-	</div>
+	</footer>
 
 </body>
 </html>
