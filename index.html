@@ -13,9 +13,10 @@
   	<link rel="stylesheet" href="style.css">
 
 </head>
-<!-- Nav ---------------------->
 <body>
-	<header>
+
+<!-- Nav ---------------------->
+	<!--<header>
 		<nav class="navbar navbar-expand-md container">
 				<div class="navbar-nav" id="center-nav">
 			    <a class="nav-link" id="link" href="#Profil">A propos</a>
@@ -25,31 +26,32 @@
 			    <a class="nav-link" id="link" href="#contact">Contact</a>
 				</div>
 		</nav>
-	</header>
+	</header>-->
 
 	<div id="nom">
 		<div id="titre">
+			<h1 class="text-black">E-Portfolio de </h1>
 			<h1 class="text-black">Paul van der Hoeven</h1>
-			<p class="text-black">Etudiant en 2ème année de DUT Informatique</p>
 		</div>
 	</div>
+
 <!-- Profil ---------------------------------------->
 	<div class="container-fluid">
 		<div class="container">
-			<h2 class="center">A propos de moi</h2>
+			<h2 class="center">Qui suis-je ?</h2>
 			<div class="row">
-				<div id="moi" class="col-md-4">
-					<img id="moi" class="circle" src="./images/moi.jpg">
+				<div id="img-moi" class="col-md-4">
+					<img id="img-moi" class="circle" src="./images/moi.jpg">
 				</div>
 				<div id="profil-text" class="col-md-8">
-					<h3>Paul van der Hoeven</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nisi suscipit, dictum metus sit amet, euismod mi. Duis facilisis placerat ante. Duis congue tempor dolor, non sodales nunc vulputate non. Aenean vel sodales enim. Morbi egestas urna id porta malesuada. Duis id purus convallis, bibendum diam et, consectetur risus. Nam dapibus mollis vulputate. Curabitur pulvinar ut augue ut gravida. Sed vitae odio sed massa lacinia ornare eget at est.
-					</p>
-					<ul>
-						<li>Age: 18</li>
-						<li>Location: Montpellier, France</li>
-						<li>Mail: paul.vdh@hotmail.fr</li>
-					</ul>
+					<p>Bonjour, je m'apelle Paul van der Hoeven, j'ai 19 ans et je suis étudiant en 2ème année de DUT Informatique à l'IUT de Montpellier.</p>
+					<p>Ma personnalité:</p>
+					<ul><li>tranquille et calme, efficace dans mon travail</li>
+					<li>tempérament timide et réservé</li></ul>
+
+					<p>Mes loisirs et centres d'intérêts:</p>
+					<ul><li>natation depuis 8 ans en club (minimum 1 séance/semaine)</li>
+					<li>particulièrement intérressé par les nouvelles technologies</li></ul>
 				</div>
 			</div>
 		</div>
@@ -70,6 +72,7 @@
 							 <p class="sous-titre">En cours d'obtention</h4>
 				       <p>Formation en informatique dans plusieurs domaines: programmation objet, réseau, base de données, programmation web, gestion de projet.
 							 <br>Classement au semestre 3 : 3/114</p>
+							 <hr>
 				     </div>
 				   </div>
 					 <div class="container-timeline">
@@ -84,8 +87,13 @@
 				</div>
 
 				<!-- Mon projet Pro ---------------------------------->
-				<div class="mon-projet-pro col-md-6">
-					<h2 class="center text-white">Mon projet professionnel</h2>
+				<div class="mon-projet-pro col-md-6 text-white">
+					<h2 class="center">Mon projet</h2>
+					<h5>Métier ciblé: ingénieur en sécurité informatique</h5>
+					<p>Je suis candidat aux formations:</p>
+					<ul><li>INSA Centre Val de Loire en Sécurité et Technologies Informatiques</li>
+					<li>Ecoles des Mines d'Alès en Informatique et Réseaux</li>
+					<li>Polytech Montpellier en Informatique et Gestion</li></ul>
 				</div>
 		</div>
 	</div>
@@ -93,35 +101,35 @@
 
 <!-- Mes projets ------------------------->
 
-<div class="container-fluid">
-	<div class="container">
-		<h2 class="center" >Mes projets</h2>
-			<div class="row">
-				<div class="col-md-4 card">
-					<div class="card-header">
-						<h3>Plugin Minecraft Factions</h3>
+	<div class="container-fluid">
+		<div class="container">
+			<h2 class="center" >Mes projets</h2>
+				<div class="row">
+					<div class="col-md-4 card">
+						<div class="card-header">
+							<h3>Plugin Minecraft Factions</h3>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 card">
-					<div class="card-header">
-						<h3>Reconnaissance de blasons par machine learning</h3>
+					<div class="col-md-4 card">
+						<div class="card-header">
+							<h3>Reconnaissance de blasons par machine learning</h3>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 card">
-					<div class="card-header">
-						<h3>Site de eCommerce</h3>
+					<div class="col-md-4 card">
+						<div class="card-header">
+							<h3>Site de eCommerce</h3>
+						</div>
 					</div>
-				</div>
 
-			</div>
+				</div>
+		</div>
 	</div>
-</div>
 
 <!-- Expériences professionnelles ------------------->
 
-	<div class="container-fluid">
+	<div class="container-fluid bg-dark">
 		<div class="container">
-			<h2 class="center">Expériences professionnelles</h2>
+			<h2 class="text-white center">Expériences</h2>
 			<div class="row">
 				<div class="col-md-3 card">
 					<h5 class="center">Etudiant en DUT Informatique (2018 - aujourd'hui)</h5>
@@ -134,11 +142,11 @@
 	</div>
 
 <!-- Footer ----------------------------->
-	<footer class="container-fluid bg-dark">
+	<footer class="container-fluid">
 		<div class="container" id="footer">
-				<div class="text-white h4" id="mail">
+				<p id="mail">
 					Mail: <a href="mailto:paul.vdh@hotmail.fr">paul.vdh@hotmail.fr</a>
-				</div>
+				</p>
 				<div class="social-icons" id="footer-links">
 					<a href="https://www.linkedin.com/in/paul-van-der-hoeven-68180216b/" class=""><span id="icon" class="socicon socicon-linkedin"></span></a>
 					<a href="https://github.com/paul-vanderhoeven" class=""><span id="icon" class="socicon socicon-github"></span></a>
