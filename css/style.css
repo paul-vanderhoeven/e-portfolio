@@ -3,8 +3,11 @@
 	--grey-color: #282828;
 }
 
-body {
+/* ------------------------------- Coomon -------------------------------------*/
+
+html {
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 
 .center {
@@ -26,11 +29,19 @@ h2.text-white, h2.text-white * {
 	color: white;
 }
 
-/* ------------------------------- Intro -------------------------------------*/
+/* ------------------------------- Nav -------------------------------------*/
 
-nav a{
+nav{
 	color: black;
+	text-transform: uppercase;
 }
+#nav-brand {
+	color: var(--timeline-color);
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* ------------------------------- "Bienvenue sur mon e-Portfolio" & image -------------------------------------*/
 
 div#nom > h1 {
 	font-size: 60px;
@@ -38,7 +49,7 @@ div#nom > h1 {
 }
 
 div#nom {
-	background-image: url("img/wallpaper.jpg");
+	background-image: url("../img/wallpaper.jpg");
 	background-size: 100%;
 	min-height: 300px;
 	display: flex;
@@ -47,6 +58,9 @@ div#nom {
 	justify-content: center;
 	color: white;
 }
+
+/* ------------------------------- Profil -------------------------------------*/
+
 img.photo-profil {
 	width: auto;
 	height: auto;
@@ -95,7 +109,7 @@ p#mail > a {
 	color: white;
 }
 
-/* ------------------------------- Timeline -------------------------------------*/
+/* ------------------------------- Ma formation et mon projet pro & Timeline -------------------------------------*/
 
 div.ma-formation * {
   box-sizing: border-box;
@@ -113,7 +127,7 @@ div.ma-formation * {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #99ff33;
+  background-color: var(--timeline-color);
   top: 0;
   bottom: 0;
   margin-left: -3px;
@@ -132,7 +146,8 @@ div.ma-formation * {
   width: 25px;
   height: 25px;
   right: -13px;
-  background-color: var(--timeline-color);
+	border: 5px solid var(--timeline-color);
+  background-color: white;
   top: 35px;
   border-radius: 50%;
 	left: -13px;
@@ -189,4 +204,10 @@ p.sous-titre {
 .mes-projets img {
 	width: 100%;
 	height: auto;
+	border: 10px solid var(--grey-color);
+	transition: filter 0.6s, transform 0.5s;
+}
+.mes-projets img:hover {
+	filter: brightness(15%);
+	transform: scale(1.1);
 }
