@@ -15,7 +15,7 @@ html {
 }
 
 h1, h2 {
-	font-weight: 700;
+	font-weight: bold;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	padding: 5px;
@@ -29,16 +29,25 @@ h2.text-white, h2.text-white * {
 	color: white;
 }
 
+p, li, ul {
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
 /* ------------------------------- Nav -------------------------------------*/
 
 nav{
 	color: black;
 	text-transform: uppercase;
 }
-#nav-brand {
+#brand {
 	color: var(--timeline-color);
 	font-size: 25px;
 	font-weight: bold;
+}
+nav li {
+	letter-spacing: normal;
+	font-size: normal;
 }
 
 /* ------------------------------- "Bienvenue sur mon e-Portfolio" & image -------------------------------------*/
@@ -136,7 +145,7 @@ div.ma-formation * {
 
 p.date {
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: bold;
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	color: var(--timeline-color);
@@ -167,6 +176,18 @@ p.sous-titre {
   }
 }
 
+.metier-cible {
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
+.mon-projet-pro hr {
+	width: 80%;
+}
+.candidat, .mon-projet-pro li {
+	text-align: left;
+}
+
 /* ------------------------------- Mes Projets -------------------------------------*/
 
 .mes-projets {
@@ -176,26 +197,27 @@ p.sous-titre {
 	border: 10px solid var(--grey-color);
 	border-radius: 15px;
 	margin-bottom: 40px;
-	padding: 0px;
+	margin-top: 30px;
 	width: 100%;
 	height: auto;
+	background-color: var(--grey-color);
 	transition: 0.5s filter, 0.5s transform;
 }
-.hover-box:hover img{
+.hover-box:hover img {
 	filter: brightness(15%);
 	transform: scale(1.15);
 }
-.hover-box:hover div{
+.hover-box:hover div {
 	opacity: 1;
 }
 .hover-box div div {
 	text-align: center;
+}
+.hover-box div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-.hover-box div {
 	opacity: 0;
 	color: white;
 	transition: 0.5s opacity;

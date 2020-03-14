@@ -5,8 +5,6 @@
   	<meta charset="utf-8">
   	<!-- import Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  	<!-- import Goole Icons Font -->
-  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- import Social Media Icons-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<!-- import my css -->
@@ -22,13 +20,13 @@
 
 <!-- Nav ---------------------->
 	<header>
-		<nav class="container-fluid navbar-fixed-top navbar-default">
+		<nav class="navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<i class="material-icons">menu</i>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fa fa-bars" aria-hidden="true"></i>
 					</button>
-					<a class="navbar-brand" id="nav-brand" href="#">Paul van der Hoeven</a>
+					<a class="navbar-brand" id="brand" href="#">Paul van der Hoeven</a>
 				</div>
 
 	  		<div class="collapse navbar-collapse" id="myNavbar">
@@ -67,7 +65,7 @@
 					<p>Bonjour, je m'apelle Paul van der Hoeven, j'ai 19 ans et je suis étudiant en 2ème année de DUT Informatique à l'IUT de Montpellier.</p>
 					<p>Ma personnalité:</p>
 					<ul><li>tranquille et calme, efficace dans mon travail</li>
-					<li>tempérament timide et réservé</li></ul>
+					<li>déterminé et réservé</li></ul>
 
 					<p>Mes loisirs et centres d'intérêts:</p>
 					<ul><li>natation depuis 8 ans en club (minimum 1 séance/semaine)</li>
@@ -109,7 +107,8 @@
 
 				<div class="mon-projet-pro col-md-6 text-white center">
 					<h2>Mon projet</h2>
-					<h5>Métier ciblé: ingénieur en sécurité informatique</h5>
+					<p class="metierCible">Métier ciblé: ingénieur en sécurité informatique</p>
+					<hr>
 					<p>Je suis candidat aux formations:</p>
 					<ul><li>INSA Centre Val de Loire en Sécurité et Technologies Informatiques</li>
 					<li>Ecoles des Mines d'Alès en Informatique et Réseaux</li>
@@ -121,7 +120,7 @@
 
 <!-- Mes projets ------------------------->
 
-	<div class="container-fluid mes-projets">
+	<div class="container-fluid mes-projets" id="mes-projets">
 		<div class="container">
 			<h2 class="center" >Mes projets</h2>
 				<div class="row">
