@@ -210,16 +210,23 @@ p.sous-titre {
 .hover-box:hover div {
 	opacity: 1;
 }
-.hover-box div div {
+.hover-text div {
 	text-align: center;
+	position:relative;
 }
-.hover-box div {
+.hover-text a {
+	text-align: center;
+	color: white;
+	text-decoration: underline;
+}
+.hover-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	color: white;
+	width: 80%;
 	transition: 0.5s opacity;
 }
 
