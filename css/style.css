@@ -52,12 +52,12 @@ nav li {
 
 /* ------------------------------- "Bienvenue sur mon e-Portfolio" & image -------------------------------------*/
 
-div#nom > h1 {
+div.nom > h1 {
 	font-size: 60px;
 	padding: 30px;
 }
 
-div#nom {
+div.nom {
 	background-image: url("../img/wallpaper.jpg");
 	background-size: 100%;
 	min-height: 300px;
@@ -79,6 +79,33 @@ img.photo-profil {
 div.photo-profil {
 	display: flex;
 	justify-content: center;
+}
+
+.div-bt-youtube {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.div-bt-youtube button {
+	background-color: #4d79ff;
+	padding: 5px;
+	margin: 10px;
+	border: none;
+	border-radius: 20px;
+}
+
+.div-bt-youtube button:hover {
+	background-color: #1a53ff;
+}
+
+.div-bt-youtube button a {
+	color: black;
+	text-decoration: none;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding: 20px;
 }
 
 /* ------------------------------- Ma formation et mon projet pro & Timeline -------------------------------------*/
