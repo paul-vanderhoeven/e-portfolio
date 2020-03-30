@@ -91,6 +91,11 @@ div.photo-profil {
 	justify-content: center;
 }
 
+.mail {
+	color: inherit;
+	text-decoration: underline;
+}
+
 .icons * {
 	display: flex;
 	justify-content: center;
