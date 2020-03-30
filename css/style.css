@@ -34,6 +34,10 @@ p, li, ul {
 	letter-spacing: 1px;
 }
 
+hr {
+	border: solid 2px;
+}
+
 /* ------------------------------- Nav -------------------------------------*/
 
 nav{
@@ -70,15 +74,32 @@ div.nom {
 
 /* ------------------------------- Profil -------------------------------------*/
 
+#profil hr {
+	width: 50%;
+	border-color: var(--grey-color);
+	margin: 10px auto;
+}
+
 img.photo-profil {
 	width: auto;
 	height: auto;
-	margin-bottom: 30px;
-	max-height: 400px;
+	margin: 30px 0px;
+	max-height: 600px;
 }
 div.photo-profil {
 	display: flex;
 	justify-content: center;
+}
+
+.icons * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center
+}
+.icons i {
+	font-size: 50px;
 }
 
 .div-bt-youtube {
@@ -211,6 +232,7 @@ p.sous-titre {
 
 .mon-projet-pro hr {
 	width: 80%;
+	border-color: white;
 }
 
 .candidat, .mon-projet-pro li {
@@ -378,9 +400,9 @@ footer > div {
 	align-items: center;
 	flex-direction: column;
 }
-.footer-links span {
+.footer-links i {
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	border: 1px solid white;
 	padding: 6px 8px;
 	margin: 6px 10px;
